@@ -1,0 +1,14 @@
+{
+  "name": "travel-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "Abolfazl Jamshidi",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}
