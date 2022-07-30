@@ -1,0 +1,30 @@
+.socials {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  transform: translate(-50%, -50%);
+
+  &__icon {
+    animation: moveInUp 1s ease-in 1;
+
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  }
+
+  &__icon {
+    & img {
+      width: 1rem;
+    }
+  }
+}
