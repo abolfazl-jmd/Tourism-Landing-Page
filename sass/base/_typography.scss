@@ -13,6 +13,8 @@ body {
   text-align: center;
   color: $color-white;
 
+  user-select: none;
+
   &__subtitle {
     font-size: 2rem;
     font-weight: $light-font;

@@ -18,6 +18,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+  user-select: none;
 }
 .header__subtitle {
   font-size: 2rem;
@@ -130,6 +131,20 @@ body {
   object-position: center;
 }
 
+.backgrounds__detail {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  color: #9b9b9b;
+}
+.backgrounds__detail .starter {
+  color: #fff;
+  font-size: 1.7rem;
+}
+.backgrounds__detail .backgrounds__detail--text {
+  font-size: 1.2rem;
+}
+
 .socials {
   position: absolute;
   top: 50%;
@@ -152,6 +167,30 @@ body {
 }
 .socials__icon img {
   width: 1rem;
+}
+
+.backgrounds__bar {
+  position: absolute;
+  right: 4%;
+  top: 35%;
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 30%;
+}
+.backgrounds__bar .bar {
+  width: 0.2rem;
+  height: 100%;
+  background-color: #9b9b9b;
+  position: relative;
+}
+.backgrounds__bar .bar .scrollbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 14.2857142857%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */
