@@ -118,6 +118,20 @@ body {
   font-weight: 600;
   text-transform: capitalize;
   cursor: pointer;
+  position: relative;
+}
+.items::before {
+  content: "";
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: #fff;
+  transition: all 0.2s ease-in;
+}
+.items:hover::before {
+  width: 100%;
 }
 
 .backgrounds {
@@ -158,6 +172,10 @@ body {
 }
 .socials__icon {
   animation: moveInUp 1s ease-in 1;
+  transition: all 0.2s ease-in;
+}
+.socials__icon:hover {
+  transform: translateY(-0.2rem);
 }
 .socials__icon:nth-child(2) {
   animation-delay: 0.2s;

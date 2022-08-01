@@ -25,4 +25,22 @@
   font-weight: $semi-bold;
   text-transform: capitalize;
   cursor: pointer;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 0;
+    height: 0.1rem;
+    background-color: $color-white;
+
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
 }

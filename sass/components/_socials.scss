@@ -12,6 +12,11 @@
 
   &__icon {
     animation: moveInUp 1s ease-in 1;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
 
     &:nth-child(2) {
       animation-delay: 0.2s;
