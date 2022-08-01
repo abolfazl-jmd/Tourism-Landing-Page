@@ -1,2 +1,15 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
 @import "base/base";
 @import "base/typography";
+@import "base/utilities";
+@import "base/animation";
+
+@import "layout/header";
+@import "layout/navigation";
+
+@import "components/backgrounds";
+@import "components/socials";
+@import "components/backgroundsBar";
+@import "components/destinations";

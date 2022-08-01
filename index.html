@@ -8,13 +8,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;900&family=Roboto:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;900&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/png" href="assets/Logo.svg" />
 
     <title>TRAVELx | Explore the beautiful Norway</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="hero">
+      <div class="overlay"></div>
+
+      <nav class="navigation u-flex-align-center">
+        <div class="logo">
+          <a class="logo__box u-flex-align-center" href="#">
+            <img
+              src="./assets/1.png"
+              alt="TRAVELx Logo"
+              class="logo__box__img"
+            />
+            <span class="logo__box__text">TRAVELx</span>
+          </a>
+        </div>
+
+        <div class="navigation_items">
+          <ul class="nav__items u-flex-align-center">
+            <li class="items">destination</li>
+            <li class="items">activities</li>
+            <li class="items">about us</li>
+            <li class="items">contact</li>
+          </ul>
+        </div>
+
+        <div class="nav__icon">
+          <img src="/assets/hamburger icon.svg" alt="" />
+        </div>
+      </nav>
+
+      <div class="backgrounds">
+        <img
+          src="./assets/background-image-1.jpg"
+          alt=""
+          class="backgrounds__img"
+        />
+      </div>
+
+      <div class="backgrounds__bar">
+        <div class="bar">
+          <div class="scrollbar"></div>
+        </div>
+      </div>
+
+      <div class="backgrounds__detail">
+        <span class="backgrounds__detail--text">
+          <span class="starter">01</span>
+          /
+          <span class="ending">07</span>
+        </span>
+      </div>
+
+      <div class="header">
+        <span class="header__subtitle">Explore</span>
+        <h1 class="header__title">Norway</h1>
+      </div>
+
+      <div class="socials">
+        <a href="#" class="socials__icon">
+          <img src="/assets/facebook.svg" alt="facebook" />
+        </a>
+        <a href="#" class="socials__icon">
+          <img src="/assets/twitter.svg" alt="twitter" />
+        </a>
+        <a href="#" class="socials__icon">
+          <img src="/assets/Pathinstagram.svg" alt="instagram" />
+        </a>
+      </div>
+
+      <div class="destinations u-flex-align-center">
+        <div class="destination u-flex-align-center">
+          <div class="destination--icon">
+            <img
+              src="./assets/location-icon.svg"
+              alt="location-icon"
+              class="location-icon"
+            />
+          </div>
+          <div class="destination__details">
+            <span class="destination__details--name">trondheim</span>
+            <span class="destination__details--detail">plan a trip</span>
+          </div>
+        </div>
+
+        <div class="destination u-flex-align-center">
+          <div class="destination--icon">
+            <img
+              src="./assets/location-icon.svg"
+              alt="location-icon"
+              class="location-icon"
+            />
+          </div>
+          <div class="destination__details">
+            <span class="destination__details--name">geirangerfjord</span>
+            <span class="destination__details--detail">plan a trip</span>
+          </div>
+        </div>
+
+        <div class="destination u-flex-align-center">
+          <div class="destination--icon">
+            <img
+              src="./assets/location-icon.svg"
+              alt="location-icon"
+              class="location-icon"
+            />
+          </div>
+          <div class="destination__details">
+            <span class="destination__details--name">lofoten</span>
+            <span class="destination__details--detail">plan a trip</span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

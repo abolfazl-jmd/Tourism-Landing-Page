@@ -1,0 +1,8 @@
+.hero {
+  height: 100vh;
+  position: relative;
+
+  .overlay {
+    @include overlay;
+  }
+}

@@ -4,3 +4,43 @@ body {
   //   font-family: "Manrope", sans-serif;
   //   font-family: "Roboto", sans-serif;
 }
+
+.header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: $color-white;
+
+  user-select: none;
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: $light-font;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  &__title {
+    font-size: 15rem;
+    background-clip: text;
+    background: linear-gradient(
+      to top right,
+      rgb(201, 196, 196) 1%,
+      $color-white 99%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $script-font-family;
+    letter-spacing: 1rem;
+
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+}

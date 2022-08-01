@@ -11,4 +11,235 @@ body {
   font-size: 62.5%;
 }
 
+.header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  user-select: none;
+}
+.header__subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.header__title {
+  font-size: 15rem;
+  background-clip: text;
+  background: linear-gradient(to top right, rgb(201, 196, 196) 1%, #fff 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+  letter-spacing: 1rem;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.u-flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero {
+  height: 100vh;
+  position: relative;
+}
+.hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), transparent);
+}
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.logo__box__img {
+  width: 2.2rem;
+}
+.logo__box__text {
+  font-size: 1rem;
+  margin-left: 0.7rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.items {
+  margin: 0 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+}
+.items::before {
+  content: "";
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: #fff;
+  transition: all 0.2s ease-in;
+}
+.items:hover::before {
+  width: 100%;
+}
+
+.backgrounds {
+  width: 100%;
+  height: 100%;
+}
+.backgrounds__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.backgrounds__detail {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  color: #9b9b9b;
+}
+.backgrounds__detail .starter {
+  color: #fff;
+  font-size: 1.7rem;
+}
+.backgrounds__detail .backgrounds__detail--text {
+  font-size: 1.2rem;
+}
+
+.socials {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transform: translate(-50%, -50%);
+}
+.socials__icon {
+  animation: moveInUp 1s ease-in 1;
+  transition: all 0.2s ease-in;
+}
+.socials__icon:hover {
+  transform: translateY(-0.2rem);
+}
+.socials__icon:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.socials__icon:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.socials__icon img {
+  width: 1rem;
+}
+
+.backgrounds__bar {
+  position: absolute;
+  right: 4%;
+  top: 35%;
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 30%;
+}
+.backgrounds__bar .bar {
+  width: 0.2rem;
+  height: 100%;
+  background-color: #9b9b9b;
+  position: relative;
+}
+.backgrounds__bar .bar .scrollbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 14.2857142857%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.destinations {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
+}
+
+.destination {
+  background-color: rgba(255, 255, 255, 0.1);
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+.destination__details {
+  display: flex;
+  flex-direction: column;
+}
+.destination__details--name {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.destination__details--detail {
+  color: #9b9b9b;
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
