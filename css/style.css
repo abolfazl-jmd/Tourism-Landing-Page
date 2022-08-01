@@ -211,4 +211,35 @@ body {
   transition: all 0.5s ease-in;
 }
 
+.destinations {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
+}
+
+.destination {
+  background-color: rgba(255, 255, 255, 0.1);
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+.destination__details {
+  display: flex;
+  flex-direction: column;
+}
+.destination__details--name {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.destination__details--detail {
+  color: #9b9b9b;
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
