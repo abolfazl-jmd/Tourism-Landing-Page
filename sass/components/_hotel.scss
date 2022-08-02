@@ -1,0 +1,24 @@
+.hotel {
+  .hotel__details {
+    margin-top: 1rem;
+
+    &__rank {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  &__image {
+    border-radius: 1rem;
+    overflow: hidden;
+
+    img {
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        @include zoomIn;
+      }
+    }
+  }
+}
