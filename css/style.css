@@ -104,6 +104,30 @@ body {
   color: #6d6d6d;
 }
 
+.review__message {
+  font-family: "Roboto", sans-serif;
+}
+.review__message--icon {
+  font-size: 2rem;
+  color: #ff9921;
+}
+.review__message--text {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #6d6d6d;
+  margin: 1rem 0;
+}
+.review__details {
+  color: #fff;
+}
+.review__details .name {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.review__details .company {
+  font-size: 0.8rem;
+}
+
 .u-flex-align-center {
   display: flex;
   align-items: center;
@@ -111,6 +135,12 @@ body {
 
 .u-sections-padding {
   padding: 5rem 2rem;
+}
+
+.u-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 @keyframes moveInLeft {
@@ -205,6 +235,18 @@ body {
   width: 80%;
   margin: auto;
   gap: 1rem;
+}
+
+.reviews {
+  margin: 3rem 0;
+  padding: 3rem;
+  background: url("/assets/background-image-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30rem;
+  gap: 2rem;
+  border-radius: 1rem;
 }
 
 .backgrounds {
@@ -358,6 +400,35 @@ body {
 }
 .hotel__image img:hover {
   transform: scale(1.1);
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.review__message {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 0.8rem;
+  position: relative;
+}
+.review__message::before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 7%;
+  width: 2.4rem;
+  height: 1.6rem;
+  background-color: #fff;
+  clip-path: polygon(0 0, 53% 100%, 100% 0);
+}
+.review__details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

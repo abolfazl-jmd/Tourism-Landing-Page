@@ -1,0 +1,31 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__message {
+    background-color: $color-white;
+    padding: 3rem;
+    border-radius: 0.8rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -10%;
+      left: 7%;
+      width: 2.4rem;
+      height: 1.6rem;
+      background-color: $color-white;
+      clip-path: polygon(0 0, 53% 100%, 100% 0);
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+  }
+}
