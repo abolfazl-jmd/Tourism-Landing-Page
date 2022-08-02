@@ -95,6 +95,15 @@ body {
   color: #6d6d6d;
 }
 
+.hotel__details .hotel-name {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.hotel__details--price {
+  font-size: 1rem;
+  color: #6d6d6d;
+}
+
 .u-flex-align-center {
   display: flex;
   align-items: center;
@@ -330,6 +339,25 @@ body {
   gap: 2rem;
   padding: 0 2rem;
   margin: 3rem 0;
+}
+
+.hotel .hotel__details {
+  margin-top: 1rem;
+}
+.hotel .hotel__details__rank {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.hotel__image {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.hotel__image img {
+  transition: all 0.2s ease-in;
+}
+.hotel__image img:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

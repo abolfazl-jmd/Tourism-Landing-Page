@@ -108,3 +108,15 @@ body {
     }
   }
 }
+
+.hotel__details {
+  .hotel-name {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &--price {
+    font-size: 1rem;
+    color: $color-gray-2;
+  }
+}
