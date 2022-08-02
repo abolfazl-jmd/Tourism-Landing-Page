@@ -79,6 +79,22 @@ body {
   color: #9b9b9b;
 }
 
+.philosophy__details .number {
+  color: #9b9b9b;
+  align-self: flex-start;
+  font-size: 1.3rem;
+}
+.philosophy__details__text--title {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.philosophy__details__text--des {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #6d6d6d;
+}
+
 .u-flex-align-center {
   display: flex;
   align-items: center;
@@ -176,7 +192,7 @@ body {
   width: 100%;
 }
 
-.activties__wrapper {
+.wrapper {
   width: 80%;
   margin: auto;
   gap: 1rem;
@@ -308,6 +324,12 @@ body {
 }
 .activity__img:hover {
   transform: scale(1.1);
+}
+
+.philosophy__details {
+  gap: 2rem;
+  padding: 0 2rem;
+  margin: 3rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -86,3 +86,25 @@ body {
     }
   }
 }
+
+.philosophy__details {
+  .number {
+    color: $color-gray;
+    align-self: flex-start;
+    font-size: 1.3rem;
+  }
+
+  &__text {
+    &--title {
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+    }
+
+    &--des {
+      font-size: 1rem;
+      line-height: 2rem;
+      color: $color-gray-2;
+    }
+  }
+}
