@@ -1,0 +1,35 @@
+.footer {
+  background-color: $color-footer-bg;
+  padding: 3rem;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../../assets/logo footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 5rem;
+
+    &--img {
+      margin-left: 0.4rem;
+    }
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  .line {
+    width: 80%;
+    height: 0.1rem;
+    margin: 2rem auto;
+    background-color: $color-gray;
+  }
+
+  &__credentials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
