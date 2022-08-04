@@ -1,7 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
-  //   font-family: "Manrope", sans-serif;
 }
 
 .header {
@@ -144,6 +143,16 @@ body {
     }
 
     .company {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.footer {
+  &__credentials {
+    font-family: $monrope-font-family;
+
+    .copyrights {
       font-size: 0.8rem;
     }
   }

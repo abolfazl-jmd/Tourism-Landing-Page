@@ -128,6 +128,13 @@ body {
   font-size: 0.8rem;
 }
 
+.footer__credentials {
+  font-family: "Manrope", sans-serif;
+}
+.footer__credentials .copyrights {
+  font-size: 0.8rem;
+}
+
 .u-flex-align-center {
   display: flex;
   align-items: center;
@@ -247,6 +254,37 @@ body {
   height: 30rem;
   gap: 2rem;
   border-radius: 1rem;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 3rem;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../assets/logo footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 5rem;
+}
+.footer__logo--img {
+  margin-left: 0.4rem;
+}
+.footer__header {
+  text-align: center;
+}
+.footer .line {
+  width: 80%;
+  height: 0.1rem;
+  margin: 2rem auto;
+  background-color: #9b9b9b;
+}
+.footer__credentials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .backgrounds {
@@ -429,6 +467,38 @@ body {
   gap: 1rem;
   width: 90%;
   margin: auto;
+}
+
+.footer__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 2rem auto;
+}
+.footer__items--item {
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  background-color: #f4f4f4;
+  padding: 0.3rem;
+}
+.footer__items--item:hover {
+  transform: scale(1.1) skew(20deg);
+  box-shadow: 0 0 1rem 0.08rem rgba(0, 0, 0, 0.35);
+}
+
+.footer__socials {
+  width: 10%;
+  justify-content: space-between;
+}
+.footer__socials--social {
+  background-color: #9b9b9b;
+  color: #2d2d2d;
+  padding: 0.3rem 0.5rem;
+  border-radius: 100%;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
