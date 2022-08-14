@@ -4,6 +4,12 @@ const scrollBar = document.querySelector(".scrollbar");
 const starterImageNum = document.querySelector(".starter");
 const endingImageNum = document.querySelector(".ending");
 
+// Dragging effect variables
+const wrapper = document.querySelectorAll(".wrapper");
+let isDown = false;
+let startX;
+let scrollLeft;
+
 // VARIABLES
 const TIME_OUT_SEC = 5;
 let index = 0;
@@ -33,6 +39,53 @@ const changeScrollBar = (element, index) => {
   element.style.top = `${index * 15}%`;
 };
 
+// Dragging effect
+const startDragging = () => {
+  wrapper.forEach((item) =>
+    item.addEventListener("mousedown", function (e) {
+      isDown = true;
+      // add class
+      item.classList.add("active");
+      item.startX = e.pageX - item.offsetLeft;
+      item.scrollLeft = item.scrollLeft;
+    })
+  );
+};
+
+const exitDragWhenMouseUp = () => {
+  wrapper.forEach((item) =>
+    item.addEventListener("mouseup", (e) => {
+      isDown = false;
+      item.classList.remove("active");
+    })
+  );
+};
+
+const exitDragWhenMouseLeave = () => {
+  wrapper.forEach((item) =>
+    item.addEventListener("mouseleave", (e) => {
+      isDown = false;
+      item.classList.remove("active");
+    })
+  );
+};
+
+const drag = () => {
+  wrapper.forEach((item) =>
+    item.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+
+      e.preventDefault();
+
+      // when moving
+      const x = e.pageX - item.offsetLeft;
+      const walk = (x - item.startX) * 3; // the time to move
+      item.scrollLeft = item.scrollLeft - walk;
+    })
+  );
+};
+
+// function run for initialization
 const init = () => {
   // set the ending num
   endingImageNum.innerText = `0${allImages.length}`;
@@ -46,6 +99,12 @@ const init = () => {
     index++;
     index = checkIfTheLastImage(index);
   }, TIME_OUT_SEC * 1000);
+
+  // Dragging Effect functions
+  startDragging();
+  exitDragWhenMouseLeave();
+  exitDragWhenMouseUp();
+  drag();
 };
 
 init();

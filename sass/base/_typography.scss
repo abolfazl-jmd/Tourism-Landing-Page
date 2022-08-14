@@ -157,3 +157,15 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 1110px) {
+  .header {
+    &__subtitle {
+      font-size: 1.5rem;
+    }
+
+    &__title {
+      font-size: 10rem;
+    }
+  }
+}
