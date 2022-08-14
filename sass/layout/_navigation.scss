@@ -45,3 +45,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .navigation_items {
+    display: none;
+  }
+}

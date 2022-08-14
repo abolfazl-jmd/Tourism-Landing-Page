@@ -5,7 +5,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 30rem;
   gap: 2rem;
   border-radius: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 550px) {
+  .reviews {
+    padding: 1rem;
+  }
 }

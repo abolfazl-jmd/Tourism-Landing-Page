@@ -58,6 +58,14 @@ body {
   font-size: 1.8rem;
   margin-top: 1rem;
 }
+@media screen and (max-width: 500px) {
+  .section__header--subtitle {
+    font-size: 0.8rem;
+  }
+  .section__header--title {
+    font-size: 1.3rem;
+  }
+}
 
 .activity__details {
   position: absolute;
@@ -94,6 +102,28 @@ body {
   line-height: 2rem;
   color: #6d6d6d;
 }
+@media screen and (max-width: 1270px) {
+  .philosophy__details .number {
+    font-size: 1.1rem;
+  }
+  .philosophy__details__text--title {
+    font-size: 1.2rem;
+  }
+  .philosophy__details__text--des {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .philosophy__details .number {
+    font-size: 0.9rem;
+  }
+  .philosophy__details__text--title {
+    font-size: 1rem;
+  }
+  .philosophy__details__text--des {
+    font-size: 0.8rem;
+  }
+}
 
 .hotel__details .hotel-name {
   font-size: 1.4rem;
@@ -127,6 +157,21 @@ body {
 .review__details .company {
   font-size: 0.8rem;
 }
+@media screen and (max-width: 550px) {
+  .review__message--icon {
+    font-size: 1.5rem;
+  }
+  .review__message--text {
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+  }
+  .review__details .name {
+    font-size: 0.9rem;
+  }
+  .review__details .company {
+    font-size: 0.7rem;
+  }
+}
 
 .footer__credentials {
   font-family: "Manrope", sans-serif;
@@ -141,6 +186,14 @@ body {
   }
   .header__title {
     font-size: 10rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header__subtitle {
+    font-size: 0.9rem;
+  }
+  .header__title {
+    font-size: 5rem;
   }
 }
 .u-flex-align-center {
@@ -246,6 +299,11 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+  .navigation_items {
+    display: none;
+  }
+}
 .wrapper {
   width: 100%;
   margin: auto;
@@ -265,6 +323,22 @@ body {
   display: none;
 }
 
+.network__wrapper {
+  flex-wrap: wrap;
+}
+
+.aboutus__wrapper__image {
+  width: 100%;
+}
+.aboutus__wrapper__image--img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .aboutus__wrapper {
+    flex-direction: column;
+  }
+}
 .reviews {
   margin: 3rem 0;
   padding: 3rem;
@@ -272,11 +346,17 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 30rem;
   gap: 2rem;
   border-radius: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+@media screen and (max-width: 550px) {
+  .reviews {
+    padding: 1rem;
+  }
+}
 .footer {
   background-color: #f4f4f4;
   padding: 3rem;
@@ -306,6 +386,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 570px) {
+  .footer__credentials {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .backgrounds {
@@ -361,6 +447,11 @@ body {
   width: 1rem;
 }
 
+@media screen and (max-width: 500px) {
+  .socials {
+    top: 90%;
+  }
+}
 .backgrounds__bar {
   position: absolute;
   right: 4%;
@@ -418,7 +509,12 @@ body {
 
 @media screen and (max-width: 1110px) {
   .destinations {
-    width: 80%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .destinations {
+    display: none;
   }
 }
 .activity {
@@ -442,10 +538,13 @@ body {
   transform: scale(1.1);
 }
 
+.philosophy {
+  width: 100%;
+}
 .philosophy__details {
   gap: 2rem;
   padding: 0 2rem;
-  margin: 3rem 0;
+  margin: 1.4rem 0;
 }
 
 .hotel .hotel__details {
@@ -471,6 +570,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 30rem;
+  height: 25rem;
 }
 .review__message {
   background-color: #fff;
@@ -496,11 +597,25 @@ body {
   margin: auto;
 }
 
+@media screen and (max-width: 550px) {
+  .review {
+    gap: 1rem;
+    height: 19rem;
+  }
+  .review__message {
+    padding: 1rem;
+  }
+  .review__details {
+    gap: 1rem;
+    width: 100%;
+    margin: 1rem auto;
+  }
+}
 .footer__items {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 50%;
+  width: 70%;
   margin: 2rem auto;
 }
 .footer__items--item {
@@ -516,8 +631,21 @@ body {
   box-shadow: 0 0 1rem 0.08rem rgba(0, 0, 0, 0.35);
 }
 
+@media screen and (max-width: 800px) {
+  .footer__items {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .footer__items {
+    flex-wrap: wrap;
+  }
+  .footer__items--item {
+    font-size: 0.8rem;
+  }
+}
 .footer__socials {
-  width: 10%;
+  width: 20%;
   justify-content: space-between;
 }
 .footer__socials--social {
@@ -526,6 +654,12 @@ body {
   padding: 0.3rem 0.5rem;
   border-radius: 100%;
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 800px) {
+  .footer__socials {
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

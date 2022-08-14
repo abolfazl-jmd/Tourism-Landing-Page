@@ -1,6 +1,6 @@
 .footer {
   &__socials {
-    width: 10%;
+    width: 20%;
     justify-content: space-between;
 
     &--social {
@@ -9,6 +9,14 @@
       padding: 0.3rem 0.5rem;
       border-radius: 100%;
       font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    &__socials {
+      width: 40%;
     }
   }
 }
