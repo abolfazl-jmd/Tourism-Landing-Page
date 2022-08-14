@@ -1,5 +1,9 @@
-.philosophy__details {
-  gap: 2rem;
-  padding: 0 2rem;
-  margin: 3rem 0;
+.philosophy {
+  width: 100%;
+
+  &__details {
+    gap: 2rem;
+    padding: 0 2rem;
+    margin: 1.4rem 0;
+  }
 }

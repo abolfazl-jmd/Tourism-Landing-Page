@@ -1,0 +1,15 @@
+.aboutus__wrapper {
+  &__image {
+    width: 100%;
+
+    &--img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .aboutus__wrapper {
+    flex-direction: column;
+  }
+}
