@@ -365,7 +365,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../../assets/logo footer.png");
+  background: url("../assets/logo footer.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 5rem;
