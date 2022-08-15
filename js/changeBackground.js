@@ -21,7 +21,7 @@ const allImages = [
 ];
 
 const setImageBackground = (index) => {
-  backgroundImage.src = `./assets/${allImages[index]}`;
+  backgroundImage.src = `../assets/${allImages[index]}`;
 };
 
 // check the last index to reset it again

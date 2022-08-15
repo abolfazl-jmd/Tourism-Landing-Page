@@ -1,3 +1,4 @@
+import "../sass/main.scss";
 import { changeImageHandler } from "./changeBackground.js";
 import {
   drag,
