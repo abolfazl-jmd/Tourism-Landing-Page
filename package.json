@@ -6,7 +6,7 @@
   "scripts": {
     "compile:sass": "sass sass/main.scss css/style.css -w",
     "test": "jest",
-    "build": "webpack"
+    "bundle": "webpack"
   },
   "author": "Abolfazl Jamshidi",
   "license": "ISC",
