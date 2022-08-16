@@ -1,12 +1,15 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "production",
   entry: "./js/script.js",
   output: {
-    path: path.resolve(__dirname, "public"),
     filename: "bundle.js",
+    path: path.resolve(__dirname, "build"),
+    assetModuleFilename: "src/assets/[name].[ext]",
+    clean: true,
   },
 
   // modules
@@ -29,15 +32,40 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff)$/i,
+        type: "asset/resource",
         use: [
           {
             loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "src/assets",
+              pngquant: {
+                quality: [0.9, 0.95],
+              },
+            },
           },
         ],
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024, // Inline anything under 10kb
+          },
+        },
       },
     ],
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./public/index.html"),
+      filename: "index.html",
+      chunks: ["index"],
+    }),
+  ],
 
   // optimisation
   optimization: {
